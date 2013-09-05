@@ -198,10 +198,8 @@
 			if( $pageTool ) {
 				// create the button
 				$pageBtn = $dropdownBtn->cloneNode( true );
+				$pageBtn->appendChild( new DOMText ( ' Editar' ));
 				$pageBtn->setAttribute('class', $dropdownBtn->getAttribute('class') . ' btn-info');
-				$pageIcon = $output->createElement('icon', ' ');
-				$pageIcon->setAttribute('class', 'icon-file icon-white');
-				$pageBtn->insertBefore( $pageIcon, $pageBtn->firstChild);
 
 				// create dropdown links 
 				$pageDropdown = $this->renderDataLinks( $this->skin->data['content_actions'], 'dropdown-menu' );
