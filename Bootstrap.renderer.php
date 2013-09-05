@@ -198,7 +198,7 @@
 			if( $pageTool ) {
 				// create the button
 				$pageBtn = $dropdownBtn->cloneNode( true );
-				$pageBtn->appendChild( new DOMText ( ' Editar' ));
+				$pageBtn->appendChild( new DOMText ( ' Página' ));
 				$pageBtn->setAttribute('class', $dropdownBtn->getAttribute('class') . ' btn-info');
 
 				// create dropdown links 
